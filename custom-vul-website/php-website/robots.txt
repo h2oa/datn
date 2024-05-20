@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /admin-uat.php/
+Allow: /index.php/
+
+User-agent: Bingbot
+Disallow: /admin-uat.php/
+Allow: /index.php/
+
+User-agent: *
+Disallow: /admin-uat.php/
+Allow: /index.php/

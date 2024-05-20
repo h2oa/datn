@@ -1,0 +1,93 @@
+ngày 13/3/2024
+- cung cấp người dung (không chuyên) template có sẵn
+- chức năng thêm template mới (quét script đơn lẻ)
+- rà soát template metasploit (phát hiện, scan, ...) --> tham số cần thiết:
+ + điền thủ công
+
+1. recon: lấy 1 số thông tin trước, thiếu thì điền thêm 
+2. 
+
+
+
+---> tự động nhất có thể: từ recon lấy được nhiều trường missing required càng tốt
+
+(hoa+vanh chia nhau rà soát template) 7-3
+
+core: python thuần
+phần be --> theo webservice: framework: django
+
+--------------------------------------------------------------
+tính năng thêm:
+1. domain to ip:
+không có module hỗ trợ
+--> chạy shell trực tiếp trong console (consoles.console) --> grep output
+--> command có output ngay lập tức và không
+--> while (true) lấy kết quả từng dòng / sleep()
+2. scan port
+- chọn syn thay vì tcp
+3. scan path
+
+pymetasploit3 không hỗ trợ lấy stdout
+-------------------------------------
+
+1. SSL
+
+auxiliary/scanner/http/cert
+auxiliary/scanner/http/ssl
+auxiliary/scanner/http/ssl_server
+
+2. web server test
+
+auxiliary/scanner/http/http_version
+auxiliary/admin/http/tomcat_administration
+auxiliary/admin/http/tomcat_utf8_traversal
+auxiliary/scanner/http/drupal_views_user_enum
+auxiliary/scanner/http/frontpage_login
+auxiliary/scanner/http/host_header_injection
+auxiliary/scanner/http/options
+auxiliary/scanner/http/robots_txt
+auxiliary/scanner/http/scraper
+auxiliary/scanner/http/svn_scanner
+auxiliary/scanner/http/trace
+auxiliary/scanner/http/vhost_scanner
+auxiliary/scanner/http/webdav_internal_ip
+auxiliary/scanner/http/webdav_scanner
+auxiliary/scanner/http/webdav_website_content
+
+3. File/Dir test
+
+auxiliary/scanner/http/backup_file
+auxiliary/scanner/http/brute_dirs
+auxiliary/scanner/http/copy_of_file
+auxiliary/scanner/http/dir_listing
+auxiliary/scanner/http/dir_scanner
+auxiliary/scanner/http/dir_webdav_unicode_bypass
+auxiliary/scanner/http/file_same_name_dir
+auxiliary/scanner/http/files_dir
+auxiliary/scanner/http/http_put
+auxiliary/scanner/http/ms09_020_webdav_unicode_bypass
+auxiliary/scanner/http/prev_dir_same_name_file
+auxiliary/scanner/http/replace_ext
+auxiliary/scanner/http/soap_xml
+auxiliary/scanner/http/trace_axd
+auxiliary/scanner/http/verb_auth_bypass
+
+
+
+26/3
+
+- tích hợp db_nmap (chưa hiệu quả)
+- loop check output đã complete chưa (done)
+- module cho framework cụ thể (wp, liferay, ...)
+  + wordpress: wordpress_check() --> kiểm tra có phải framework wp hay không
+  --> tích hợp wmap đối với wp (https://www.offsec.com/metasploit-unleashed/wmap-web-scanner/)
+  + joomla: detech version --> scan các module: auxiliary
+
+
+- tự viết module mới (CVE chưa có metasploit) (làm sau cùng)
+  + lưu trữ trong /usr/share/metasploit-framework/modules/auxiliary/customs
+  + git_expose.rb
+  + 
+- thông tin của script (mức độ nghiêm trọng, CVE gì (nếu có CVE đi kèm --> lấy dữ liệu từ cve mitre), framework, ...)
+  + dự kiến lưu trữ cứng trong file
+
