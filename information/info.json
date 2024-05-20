@@ -1,0 +1,11 @@
+{
+    "auxiliary/customs/test":"test",
+    "auxiliary/scanner/http/robots_txt":"CWE-200\nhttps://cwe.mitre.org/data/definitions/200.html\nImpact: Information",
+    "auxiliary/customs/git_expose":"CWE-527\nhttps://cwe.mitre.org/data/definitions/527.html\nImpact: Critical",
+    "auxiliary/customs/admin_expose":"CWE-419\nhttps://cwe.mitre.org/data/definitions/419.html\nImpact: Varius",
+    "auxiliary/customs/phpinfo_expose":"CWE-200\nhttps://cwe.mitre.org/data/definitions/200.html\nImpact: Varius",
+    "auxiliary/customs/htaccess_expose":"CWE-200\nhttps://cwe.mitre.org/data/definitions/200.html\n\nImpact: Info",
+    "auxiliary/gather/coldfusion_pwd_props":"CVE-2013-3336\nCWE-22\nhttps://cwe.mitre.org/data/definitions/22.html\nImpact: High",
+    "auxiliary/customs/solr_endpoint":"CWE-200\nhttps://cwe.mitre.org/data/definitions/200.html\nImpact: Low",
+    "auxiliary/gather/zookeeper_info_disclosure":"CVE-2024-23944\nhttps://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-23944\nImpact: Info"
+}
