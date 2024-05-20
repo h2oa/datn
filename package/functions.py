@@ -200,8 +200,8 @@ def custom_scan(domain, infor_data):
     print("Start Custom checking ...")
     # 'auxiliary/customs/Joomla_CVE-2015-8562', 'auxiliary/customs/Joomla_CVE-2017-8917', 'auxiliary/customs/Joomla_CVE-2023-23752'
     modules = ['auxiliary/scanner/http/robots_txt', 'auxiliary/customs/git_expose', 'auxiliary/customs/admin_expose', 'auxiliary/customs/phpinfo_expose', 'auxiliary/customs/htaccess_expose', 'auxiliary/gather/coldfusion_pwd_props', 'auxiliary/customs/solr_endpoint']
-    # for testing 
-    modules = ['auxiliary/customs/admin_expose']
+    # # for testing 
+    # modules = ['auxiliary/customs/admin_expose']
     vuls = []
     responses = []
     for module in modules:
