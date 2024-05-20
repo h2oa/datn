@@ -44,7 +44,7 @@ Thay đổi IP trong `package/functions.py`, ví dụ hiện tại máy server c
 
 ![image](https://github.com/h2oa/datn/assets/114990730/cfcbf6db-4e24-4820-a166-e42081bcd1ee)
 
-Chạy vulnerability web local, đi vào `custom-vul-website/php`, chạy lệnh `sudo php -S 0.0.0.0:80` (nên chạy web server test scan trong Kali luôn).
+Chạy vulnerability web local, đi vào `custom-vul-website/php-website`, chạy lệnh `sudo php -S 0.0.0.0:80` (nên chạy web server test scan trong Kali luôn).
 
 Biến `domain` trong hàm `main()` của file `main.py` chính là địa chỉ IP của web server sẽ scan, trường hợp này là `192.168.81.130`:
 
